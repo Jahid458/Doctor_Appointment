@@ -7,6 +7,8 @@ import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
+import About from "../components/About/About";
+import ServiceList from "../components/services/ServiceList";
 
 
 
@@ -111,7 +113,6 @@ const Home = () => {
                   className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none"
                 >
                   <BsArrowRight className="group-hover:text-white w-6 h-5"/>
-
                 </Link>
               </div>
             </div>
@@ -168,6 +169,25 @@ const Home = () => {
           </div>
         </div>
       </section>
+           {/* =========== About Section ================== */}
+      <About />
+           {/* =========== Services Section ================== */}
+
+        <section >
+          <div className="container">
+            
+             <div className="xl:w-[470px] mx-auto">
+               <h2 className="heading text-center">Our Medical Services</h2>
+               <p className="text__para text-center">World class care for everyone. Our health syatem offer unmacthed expert halth care.</p>
+             </div>
+            <ServiceList />
+          </div>
+        </section>
+
+
+
+
+
     </>
   );
 };
